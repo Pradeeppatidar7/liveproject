@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --darkCyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --darkBlue: hsl(212, 21%, 14%);
+  --darkGrayishBlue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  background-color: var(--cream);
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 8px;
+}
+.container {
+  display: flex;
+  max-width: 600px;
+  margin: 150px;
+}
+.rightSection {
+  background-color: var(--white);
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 300px;
+}
+.rightSection .text1 {
+  letter-spacing: 5px;
+}
+.priceSection {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+.priceSection p:first-child {
+  color: var(--darkCyan);
+  font-size: 30px;
+  font-weight: bold;
+}
+.priceSection p:last-child {
+  text-decoration: line-through;
+}
+.rightSection button {
+  background-color: var(--darkCyan);
+  color: var(--white);
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+  }
+  .rightSection {
+      padding: 20px;
+  }
+}
